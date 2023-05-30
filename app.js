@@ -9,12 +9,12 @@ const server = http.createServer((req, res) => {
     if (radius === undefined) {
         res.statusCode = 400;
         res.setHeader('Content-Type', 'text/plain');
-        res.end('Error: Silahkan memasukkan parameter radius pada request query.\n');
+        res.end('Nama: Christian Rondonuwu\nNIM: 210211060087\n\nError: Silahkan memasukkan parameter radius pada request query.\n');
     } else {
         const area = Math.PI * radius ** 2;
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/plain');
-        res.end(`Luas lingkaran dengan jari-jari ${radius} adalah ${area}.\n`);
+        res.end(`Nama: Christian Rondonuwu\nNIM: 210211060087\n\nLuas lingkaran dengan jari-jari ${radius} adalah ${area}.\n`);
     }
 });
 
